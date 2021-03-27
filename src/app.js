@@ -1,8 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 
-const Phone = require('./app/schemas/Phone');
-
 const routes = require('./routes');
 
 require('dotenv/config');
