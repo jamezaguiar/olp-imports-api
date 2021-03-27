@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = require('mongoose');
 
-const phone = new Schema({
+const other = new Schema({
   name: {
     type: String,
     required: true,
@@ -20,4 +20,4 @@ const phone = new Schema({
   },
 });
 
-module.exports = mongoose.model('phone', phone);
+module.exports = mongoose.model('other', other);
