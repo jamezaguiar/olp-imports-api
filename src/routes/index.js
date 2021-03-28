@@ -12,9 +12,11 @@ router.get('/', async (request, response) => {
 
   const phones = await Phone.find();
   const consoles = await Console.find();
+  const others = await Other.find();
 
   phones.forEach((phone) => products.push(phone));
   consoles.forEach((console) => products.push(console));
+  others.forEach((other) => products.push(other));
 
   return response.json(products);
 });
